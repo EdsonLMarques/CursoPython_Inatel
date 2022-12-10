@@ -155,6 +155,3 @@ while sair == False:
     elif menu == "S":
         sair = True
 print("\nprograma finalizado\n")
-
-
-
