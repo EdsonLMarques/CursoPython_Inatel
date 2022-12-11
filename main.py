@@ -1,26 +1,31 @@
-"""
-Dessa forma podemos utilizar livremente nossas classes e funções de acordo com a necessidade.
-Uma vez que essa biblioteca é importada, ela passa a ser conhecida como modulo.
-O maior ganho que conseguimos dividindo um codigo em multiplos modulos é organização e escalabilidade, pois, tornamos todos
-permitimos que alterações sejam feitas em locais especificos
+# passo 2
+import folium
 
-Outro ganho é que, usando a padronização de entradas e saidas de uma função o projeto se torna quase que um quebra
-cabeça, onde cada função se encaixa com a proximo, e mesmo que voce altera a forma com que aquela função trabalha, isso
-nao ira afetar a proxima função
-"""
+mapa = folium.Map(location=[-22.257044861335906, -45.69635809285212], zoom_start=17)
+mapa.save("index.html")
 
 
 """
-Para importarmos bibliotecas externas, o primeiro passo e escolhermos quais bibliotecas iremos utilizar. O exemplo que 
-vou dar a voces envolve uma biblioteac de mapas chamada "Folium". Essa biblioteca consegue gerar paginas HTML com mapas
-e com pontos interativos plotados.
-Esse sera o nosso desafio final
-Vou apenas executar o primeiro passo, os demais iremos executar juntos
-
-como objetivo vamos criar uma aplicação que mostra um mapa, em uma localização especifica e com pontos interativos 
-plotados.
-todas as informações de laitude e longitude verião de um arquivo txt disponibilizados na pasta files (lat_lon.txt)
-
-todo o processamento das informações deve ser feito em função ou classe seja elas externas (modulos) ou internas, porem,
-manter a organização no projeto é crucial.
+O proximo passo é entender como plotar pontos utilizando o folium
+para isso vamos utilizar o metodo MARKER que precisa das seguintes informações
+    location, popup, tooltip, icon, draggable
+Nem todas essas informções sao realmente necessarias.
 """
+
+# passo 3
+import folium
+lat_lon = [-22.257044861335906, -45.69635809285212]
+
+mapa = folium.Map(location=lat_lon, zoom_start=17)
+
+popup_text = "<i>Inatel</i>"
+tooltip_text = "Clique aqui"
+
+folium.Marker(location=lat_lon, popup=popup_text, tooltip=tooltip_text).add_to(mapa)
+
+mapa.save("index.html")
+
+"""
+Vamos ao que interessa, plotar os pontos disponibilizados no lat_lon.txt e suas descrições
+"""
+
