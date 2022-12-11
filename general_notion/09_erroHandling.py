@@ -12,7 +12,7 @@ vamos usar ele para solucionar o problema que tivemos com a questao da idade nao
 while True:
     try:
         idade = int(input("entre com uma idade: "))
-        print("a idade é {} \n"format(idade))
+        print("a idade é {} \n".format(idade))
     except:
         print("voce entrou com um valor nao numerico")
 
