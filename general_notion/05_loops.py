@@ -5,7 +5,7 @@
 # ele ira contar de 1 em 1 ate chegar no seu final, o qual nao sera executado.
 # apenas para demonstrar o RANGE vamos printar todos os valores do range de 0 a 10
 
-for valor in range(0, 10, 2):
+for valor in range(0, 10):
     print(valor)
 
 
