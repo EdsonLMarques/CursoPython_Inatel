@@ -67,9 +67,7 @@ while sair == False:
         mostrarUltimo(lista_usuario)
     elif resposta == "4":
         nome = input("Quem voce quer excluir? ")
-        deletarUsuario(nome, lista_usuario)
-        # ou
-        deletarUsuario(nome=nome, lista=lista_usuario)
+        lista_usuario = deletarUsuario(nome, lista_usuario)
     elif resposta.upper() == "S":
         sair = True
     else:
