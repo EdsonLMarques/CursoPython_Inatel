@@ -10,7 +10,7 @@ from LIB import Location
 #fluxo principal
 
 # abrir o input
-file = open("resolucoes/maps/lat_lon.txt", "r")
+file = open("files/lat_lon.txt", "r")
 data = file.read().split("\n")
 List_Points = []
 for value in data:

@@ -48,7 +48,7 @@ sair = False
 lista= []
 while sair == False:
     menu = menu_principal()
-    objeto = ""
+    objeto = Usuario(nome, idade)
     if menu == "1":
         nome = input("Nome: ")
         idade = input("Idade: ")

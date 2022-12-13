@@ -4,4 +4,10 @@ Sao Paulo - 07
 Real Madrid - 11
 PSG - 06
 Liverpool - 09
-Boca Juniors - 09
+Boca Juniors - 09em 1º lugar temos Milan com 12 pontos
+em 2º lugar temos Real Madrid com 11 pontos
+em 3º lugar temos Liverpool com 09 pontos
+em 4º lugar temos Boca Juniors com 09 pontos
+em 5º lugar temos Barcelona com 07 pontos
+em 6º lugar temos Sao Paulo com 07 pontos
+em 7º lugar temos PSG com 06 pontos

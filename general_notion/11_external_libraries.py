@@ -138,5 +138,8 @@ mapa.save("index.html")
 
 """
 Vamos ao que interessa, plotar os pontos disponibilizados no lat_lon.txt e suas descrições
+    - Um sistema que plote no mapa os pontos disponibilizados
+    - O sistema deve ser contruido usando classes e funções.
+    - As classes criadas devem estar em arquivos separado
 """
 
